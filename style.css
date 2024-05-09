@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*BARRA DE NAVEGACION*/
+section.width{
+    max-width: 1440px;
+}
+section.menu{
+    padding: 10px 20px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo{
+    width: 60px;
+    height: 60px;
+    border: 1px solid #F26C4F;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F26C4F;
+    z-index: 10;
+}
+.logo p{
+    color: white;
+    font-size: 20px;
+}
+.navegacion{
+    border-radius: 20px 0 0 20px;
+    padding: 60px 20px 20px 20px;
+    background-color: #F26C4F;
+    height: 100vh;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    z-index: 1;
+}
+@media screen and (min-width:1024px) {
+    .navegacion{
+        border-radius: 0;
+        padding: 0;
+        background-color: white;
+        height: inherit;
+        width: inherit;
+        position: inherit;
+        top: inherit;
+        right: inherit;
+    }
+    
+}
+.navegacion ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+@media screen and (min-width:1024px) {
+    .navegacion{
+    display: flex;
+    flex-direction: row;
+}
+}
+.navegacion li{
+    font-size: 20px;
+    margin-bottom: 20px;
+    
+}
+@media screen and (min-width:1024px) {
+    .navegacion li{
+        margin: 0 0 0 20px;
+    }
+}
+.navegacion li a{
+    text-decoration: none;
+    color: white;
+}
+@media screen and (min-width:1024px) {
+    .navegacion li a{
+        color: black;
+    }
+}
+
+.icono_mobile{
+    width: 22px;
+    height: 22px;
+    padding: 4px;
+    border: 1px solid #F26C4F;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10;
+}
+.icono_mobile span:first-of-type,.icono_mobile span, .icono_mobile span:last-of-type {  
+    width: 14px;
+    height: 2px;
+    background-color: rgb(136, 136, 136);
+
+}
+/* CLASES QUE SE APLICARAN CUANDO SE ABRA EL MENU
+span.nav_show{
+    width: 8px;
+}
+nav.nav_show{
+    right: 0;
+}
+*/
+
